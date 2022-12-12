@@ -14,7 +14,7 @@ ol[class] {
   padding: 0;
 }
 
-li[class]{
+li[class] {
   margin-bottom: 15px;
 }
 
@@ -47,59 +47,70 @@ a[class] {
   color: #665404;
   transition: .7s;
 }
-a[class]:hover{
+
+a[class]:hover {
   color: #176464;
 }
 
-body{
+body {
   font-family: sans-serif;
   font-size: 18px;
 }
 
-.container{
+.container {
   max-width: 1440px;
   padding: 0 15px;
   margin: 0 auto;
   background-color: #d8d7d7;
 }
-.header{
+
+.header {
   border-bottom: 30px solid #fff;
 }
-.header__top{
+
+.header__top {
   padding: 30px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.header__box-img{
+
+.header__box-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
 }
-.header__content{
+
+.header__content {
   text-align: center;
   color: #176464;
 }
-.header__title{
+
+.header__title {
   font-size: 70px;
   margin-bottom: 20px;
 }
-.header__subtitle{
+
+.header__subtitle {
   font-size: 32px;
 }
-.nav{
+
+.nav {
   padding-bottom: 20px;
   font-size: 26px;
 }
-.nav__list{
+
+.nav__list {
   display: flex;
   justify-content: center;
   list-style: none;
 }
-.nav__list li + li{
+
+.nav__list li+li {
   margin-left: 30px;
 }
+
 .nav__link:after {
   display: block;
   content: '';
@@ -107,43 +118,52 @@ body{
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-.nav__link:hover:after{
+
+.nav__link:hover:after {
   transform: scaleX(1);
 }
-.main__block{
+
+.main__block {
   padding: 30px 200px;
   border-bottom: 30px solid #fff;
 }
-.main__title{
+
+.main__title {
   font-size: 26px;
   color: rgb(23, 100, 100);
   margin-bottom: 30px;
 }
+
 .contacts__span,
 .courses__autor,
-.english__span{
+.english__span {
   font-size: 18px;
   font-weight: bold;
 }
-.courses__span{
+
+.courses__span {
   font-weight: normal;
 }
-.skills__span{
+
+.skills__span {
   text-transform: uppercase;
 }
-.project__inner{
+
+.project__inner {
   display: flex;
   justify-content: space-between;
 }
-.project__img{
+
+.project__img {
   height: 310px;
   width: 445px;
 }
 
-.footer{
+.footer {
   font-size: 40px;
 }
-.footer__list{
+
+.footer__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
