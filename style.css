@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+li[class]{
+  margin-bottom: 15px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a[class] {
+  text-decoration: none;
+  color: #665404;
+  transition: .7s;
+}
+a[class]:hover{
+  color: #176464;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #d8d7d7;
+}
+.header{
+  border-bottom: 30px solid #fff;
+}
+.header__top{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__box-img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__content{
+  text-align: center;
+  color: #176464;
+}
+.header__title{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.header__subtitle{
+  font-size: 32px;
+}
+.nav{
+  padding-bottom: 20px;
+  font-size: 26px;
+}
+.nav__list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav__list li + li{
+  margin-left: 30px;
+}
+.nav__link:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #176464;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav__link:hover:after{
+  transform: scaleX(1);
+}
+.main__block{
+  padding: 30px 200px;
+  border-bottom: 30px solid #fff;
+}
+.main__title{
+  font-size: 26px;
+  color: rgb(23, 100, 100);
+  margin-bottom: 30px;
+}
+.contacts__span,
+.courses__autor,
+.english__span{
+  font-size: 18px;
+  font-weight: bold;
+}
+.courses__span{
+  font-weight: normal;
+}
+.skills__span{
+  text-transform: uppercase;
+}
+.project__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.project__img{
+  height: 310px;
+  width: 445px;
+}
+
+.footer{
+  font-size: 40px;
+}
+.footer__list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+}
