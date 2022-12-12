@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rsschool CV</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="header__top">
+        <div class="header__box-img">
+          <img src="assets/img/my_photo.jpg" alt="my photo">
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">Terentyev Sergey</h1>
+          <p class="header__subtitle">
+            Front-end web developer (Beginner)
+          </p>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#code">Code Examples</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#courses">Courses</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#english">English language</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="main">
+    <div class="container">
+      <section class="contacts main__block" id="contacts">
+        <h2 class="main__title">
+          Сontacts for communication:
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__span">
+              Telegram:
+              <a class="contacts__link" href="https://t.me/ewkin_kot">
+                @ewkin_kot
+              </a>
+            </span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__span">
+              Email:
+              <a class="contacts__link" href="serega.ru71@mail.ru">
+                serega.ru71@mail.ru
+              </a>
+            </span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__span">
+              GitHub:
+              <a class="contacts__link" href="https://github.com/sergey-krasnodar">
+                Sergey-krasnodar
+              </a>
+            </span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__span">
+              Discord:
+              <span class="contacts__span">
+                Sergey_T (@sergey-krasnodar)
+              </span>
+            </span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__span">
+              Codewars:
+              <a class="contacts__link" href="www.codewars.com/users/sergey-krasnodar">
+                Codewars
+              </a>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="about main__block" id="about">
+        <h2 class="main__title">
+          About me:
+        </h2>
+        <p class="about__text">
+          I work as a car mechanic. I want to change my profession, go to live in a warm country and work remotely. What
+          I like
+          about programming is that there is no limit to perfection here. You can always set another goal and move
+          towards it. Now
+          my goal is to create sites on the react.
+        </p>
+      </section>
+      <section class="skills main__block" id="skills">
+        <h2 class="main__title">
+          Skills
+        </h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <span class="skills__span">
+              html
+            </span>
+          </li>
+          <li class="skills__item">
+            <span class="skills__span">
+              css/scss/sass
+            </span>
+          </li>
+          <li class="skills__item">
+            <span class="skills__span">
+              git/Githab
+            </span>
+          </li>
+          <li class="skills__item">
+            <span class="skills__span">
+              vs code
+            </span>
+          </li>
+          <li class="skills__item">
+            <span class="skills__span">
+              gulp
+            </span>
+          </li>
+          <li class="skills__item">
+            <span class="skills__span">
+              JS entry level
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="code main__block" id="code">
+        <h2 class="main__title">
+          Code Examples:
+        </h2>
+        <pre><code>
+        function duplicateEncode(word){
+         let arr = word.toLowerCase().split('');
+         let newArr = arr.map(function(elem, pos) {
+          if (pos !== arr.indexOf(elem) || pos !== arr.lastIndexOf(elem)) {
+           return ')';
+          }
+           return '(';
+          });
+         let result = newArr.join('');
+          return result;
+         }
+        </code></pre>
+      </section>
+      <section class="courses main__block" id="courses">
+        <h2 class="main__title">
+          Courses:
+        </h2>
+        <ul class="courses__list">
+          <li class="courses__item">
+            <p class="courses__autor">
+              Vadim Prokopchuk:
+              <span class="courses__span">
+                "From 0 to 1"
+              </span>
+            </p>
+          </li>
+          <li class="courses__item">
+            <p class="courses__autor">
+              YouRa Allakhverdov:
+              <span class="courses__span">
+                "Modern JavaScript - from Scratch to Junior Specialist (2022)"
+              </span>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="english main__block" id="english">
+        <h2 class="main__title">
+          English:
+        </h2>
+        <span class="english__span">
+          Level - A1
+        </span>
+      </section>
+      <section class="project main__block" id="project">
+        <h2 class="main__title">
+          My projects:
+        </h2>
+        <div class="project__inner">
+          <a class="project__link" href="https://sergey-krasnodar.github.io/wawe/">
+            <img class="project__img" src="assets/img/wawe.jpg" alt="photo project wawe">
+          </a>
+          <a class="project__link" href="https://sergey-krasnodar.github.io/marketing/">
+            <img class="project__img" src="assets/img/marketing.jpg" alt="photo project marketing">
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="https://github.com/sergey-krasnodar/rsschool-cv/tree/rsschool-cv-html">
+            <svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1">
+              <g id="surface1">
+                <path style=" stroke:none;fill-rule:evenodd;fill:rgb(14.117647%,16.078431%,18.431373%);fill-opacity:1;"
+                  d="M 25.425781 0 C 11.363281 0 0 11.457031 0 25.632812 C 0 36.964844 7.28125 46.558594 17.382812 49.953125 C 18.648438 50.207031 19.109375 49.398438 19.109375 48.722656 C 19.109375 48.128906 19.066406 46.089844 19.066406 43.96875 C 11.996094 45.496094 10.523438 40.910156 10.523438 40.910156 C 9.386719 37.941406 7.703125 37.175781 7.703125 37.175781 C 5.386719 35.605469 7.871094 35.605469 7.871094 35.605469 C 10.4375 35.777344 11.785156 38.238281 11.785156 38.238281 C 14.058594 42.144531 17.722656 41.039062 19.195312 40.359375 C 19.40625 38.707031 20.078125 37.558594 20.792969 36.921875 C 15.152344 36.328125 9.21875 34.121094 9.21875 24.277344 C 9.21875 21.472656 10.226562 19.183594 11.828125 17.402344 C 11.574219 16.765625 10.691406 14.132812 12.082031 10.609375 C 12.082031 10.609375 14.226562 9.929688 19.066406 13.242188 C 21.140625 12.679688 23.277344 12.394531 25.425781 12.390625 C 27.570312 12.390625 29.757812 12.691406 31.78125 13.242188 C 36.621094 9.929688 38.765625 10.609375 38.765625 10.609375 C 40.15625 14.132812 39.273438 16.765625 39.019531 17.402344 C 40.660156 19.183594 41.628906 21.472656 41.628906 24.277344 C 41.628906 34.121094 35.695312 36.285156 30.011719 36.921875 C 30.9375 37.730469 31.738281 39.257812 31.738281 41.675781 C 31.738281 45.113281 31.695312 47.871094 31.695312 48.722656 C 31.695312 49.398438 32.160156 50.207031 33.421875 49.953125 C 43.523438 46.554688 50.804688 36.964844 50.804688 25.632812 C 50.847656 11.457031 39.441406 0 25.425781 0 Z M 25.425781 0 " />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">2022</li>
+        <li class="footer__item">
+          <a class="footer__link" href="https://rs.school/js/">
+            <img class="footer__img" src="assets/svg/rsschool-icon.svg" alt="logo rsschool">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
